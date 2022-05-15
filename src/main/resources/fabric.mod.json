@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "stopboom",
+  "version": "${version}",
+  "name": "StopBoom",
+  "description": "Stops you from right clicking on beds in the nether and end basically stopping them from blowing up.",
+  "authors": [
+    "7Teen"
+  ],
+  "contact": {
+    "website": "https://discord.gg/DwmV3RxqGv"
+  },
+  "license": "MIT",
+  "icon": "assets/stopboom/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.github.seventeen.stopboom.client.StopboomClient"
+    ],
+    "main": [
+      "com.github.seventeen.stopboom.Stopboom"
+    ]
+  },
+  "mixins": [
+    "stopboom.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.5",
+    "fabric": "*",
+    "minecraft": ">=1.18"
+  }
+}
